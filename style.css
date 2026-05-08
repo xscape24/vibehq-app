@@ -68,7 +68,7 @@ body{
     font-size:2.3vw;
     font-weight:bold;
   
-    
+    margin-top:1.2vh;
 }
 
 
@@ -78,12 +78,13 @@ body{
 .logo-2-container{
     display: flex;
     flex-direction: row;
-
+    gap:1vw;
+width:10vw;
     margin-right:2vw;
 }
 
 .nav-img{
-height:8vh;
+height:9vh;
 width:5vw;
 }
 
@@ -92,10 +93,11 @@ width:5vw;
 
 .question-img{
 height:3vh;
-margin-top:2.4vh;
+margin-top:2.6vh;
+margin-right:0vw;
 }
 #profile-img{
-    margin-bottom:.1vh;
+    margin-bottom:2.2vh;
 }
 
 /*Navbar Section End*/
@@ -167,7 +169,7 @@ color:white;
     padding-left: 0.6vw;
     padding-right: 0.4vw;
  display: grid;
- grid-template-columns: 28vw 27vw 30vw;
+ grid-template-columns: 28vw 27vw 20vw;
  grid-template-rows:38vh 38vh;
 grid-template-areas: 
 "card-1 card-2 card-5"
@@ -184,6 +186,8 @@ grid-template-areas:
     display: flex;
     text-align:center;
     flex-direction: column;
+    text-align:center;
+    align-items: center;
     
 }
 .card-header{
@@ -195,7 +199,45 @@ grid-template-areas:
 
 .card-1{
     grid-area:card-1;
+    text-align:center;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
 
+}
+
+.today-task-list{
+
+background-color: rgb(119, 119, 164);
+width:80%;
+list-style-type:none;
+border:0.2vw solid black;
+justify-content: center;
+text-align: center;
+display: center;
+color:green;
+
+}
+
+li.today-task-item{
+    color:orange;
+    border-bottom:0.2vw solid black;
+    height:4vh;
+    border-radius:0.3vw;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+
+}
+
+.add-task-btn{
+    margin-top:1vh;
+    border-radius:0.5vw;
+    width:50%; 
+    font-weight:bold;
+    font-size:1vw;
+    height:6vh;
 }
 .card-2{
       grid-area:card-2;
@@ -214,7 +256,7 @@ grid-template-areas:
     align-items: center;
     text-align: center;
     height:78.5vh;
-    width:25vw;
+    width:24vw;
       grid-area:card-5;
 }
 
@@ -251,7 +293,9 @@ margin-bottom:2vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:3vh;
+    gap:1.5vh;
+    width:14vw;
+    margin-top:0.5vh;
    
 }
 
@@ -275,28 +319,31 @@ margin-bottom:1vh;
 
 .dropdown-label{
 font-size:1.1vw;
+margin-bottom:0.4vh;
 }
 
 .sound-dropdown-label{
     margin-top:1vh;
 }
 .focus-session-btn{
-    height:7vh;
-    width:13vw;
-    font-size:1.2vw;
+    height:6vh;
+    width:12vw;
+    font-size:1vw;
     border-radius:0.8vw;
-    background-color: #10100f;
+    background-color: #000000;
     color:white;
-    margin-top:2vh;
-    border:0.2vw solid black;
+    margin-top:1.8vh;
+    border:0.1vw solid white;
     justify-content: center;
+    margin-left:0;
+    cursor:pointer;
     
 }
 /*Main Content Section Ends*/
 
 /*Footer Section*/
 .footer{
-    background-color: rgb(100, 84, 133);
+    background-color: rgb(156, 120, 54);
     grid-area:footer;
  
 }
