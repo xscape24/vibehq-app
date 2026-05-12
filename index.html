@@ -14,14 +14,14 @@
             
             <div class="logo-container">
                 <img src="assets\cloud.svg" class="nav-img logo">
-                <p class="logo-text">Vibe HQ - Find your flow in the noise</li>
+                <p class="logo-text">Vibe HQ - Find your flow in the noise</p>
                 </div>
                 
                 <div class="logo-2-container">
                     
 
                  
-                    <a href="about.html"><img src="assets\question-circle.svg" class="nav-img question-img"alt=""></li></a>
+                    <a href="about.html"><img src="assets\question-circle.svg" class="nav-img question-img"alt=""></a>
                     <img src="assets\person-circle.svg" class="nav-img" id="profile-img" alt=""></li>
                     
                 </div>
@@ -29,13 +29,13 @@
             </nav>
             
             <div class="sidebar">
-                <a href="" class="sidebar-link">   <img src="assets\profile-list.svg" class="sidebar-img"> Dashboard</a>
-                <a href="" class="sidebar-link">   <img src="assets\calendar.svg" class="sidebar-img">Calendar</a>
-                <a href="" class="sidebar-link todo-list-link">   <img src="assets\card-list.svg" class="sidebar-img">To Do List</a>
-                <a href="" class="sidebar-link">   <img src="assets\profile-list.svg" class="sidebar-img">Skill Library</a>
+                <a href="" class="sidebar-link dashboard-link">   <img src="assets\home.png" class="sidebar-img dashboard-img"> Dashboard</a>
+                <a href="" class="sidebar-link">   <img src="assets\calendar.svg" class="sidebar-img calendar-img">Calendar</a>
+                <a href="" class="sidebar-link tasks-link">   <img src="assets\card-list.svg" class="sidebar-img tasks-img">My Tasks</a>
+                <a href="" class="sidebar-link" id="library-link">   <img src="assets\profile-list.svg" class="sidebar-img" id="library-icon">Skill Library</a>
                
-                <a href="" class="sidebar-link">   <img src="assets\mic-mute.svg" class="sidebar-img"> Quiet Rooms</a>
-                 <a href="" class="sidebar-link">   <img src="assets\gear-wide.svg" class="sidebar-img">Account Settings</a>
+                <a href="" class="sidebar-link rooms-link">   <img src="assets\mic-mute.svg" class="sidebar-img rooms-img"> Quiet Rooms</a>
+                 <a href="" class="sidebar-link" id="settings-link">   <img src="assets\gear-wide.svg" class="sidebar-img" id="settings-img"><p id="settings-text">Settings</p></a>
                 
             </div>
             <div class="main-content">
@@ -45,49 +45,52 @@
          <div class="main-content-container">
   <div class="card card-1">
             <h2 class="card-header">Today's Tasks      </h2>
-            <ul class="today-task-list">
-                <li class="today-task-item">Buy eggs</li>
-                <li class="today-task-item">Wash dishes</li>
-                <li class="today-task-item">Clean the floor</li>
+            <ul class="dashboard-list tasks-list">
+                <li class="dashboard-list-item tasks-item">Buy eggs</li>
+                <li class="dashboard-list-item tasks-item">Wash dishes</li>
+                <li class="dashboard-list-item tasks-item" id="last-item">Clean the floor</li>
                
             </ul>
             <button class="add-task-btn">Add Task</button>
          </div>
          <div class="card  card-2">
-  <h2 class="card-header">Active Projects and Tasks        </h2>
-    <ul class="today-task-list">
-                <li class="today-task-item">Buy eggs</li>
-                <li class="today-task-item">Wash dishes</li>
-                <li class="today-task-item">Clean the floor</li>
+  <h2 class="card-header">Active Projects        </h2>
+    <ul class="dashboard-list project-list">
+                <li class="dashboard-list-item projects-item">VibeHQ</li>
+                <li class="dashboard-list-item projects-item">Simqueue</li>
+                <li class="dashboard-list-item projects-item" id="last-item">Remanned</li>
                
             </ul>
+                <button class="add-task-btn">Add Project</button>
          </div>
          <div class="card card-3">
   <h2 class="card-header">Skills to Improve       </h2>
-    <ul class="today-task-list">
-                <li class="today-task-item">Buy eggs</li>
-                <li class="today-task-item">Wash dishes</li>
-                <li class="today-task-item">Clean the floor</li>
+  <ul class="dashboard-list skill-list">
+                <li class="dashboard-list-item skills-item">Programming</li>
+                <li class="dashboard-list-item skills-item">Spanish</li>
+                <li class="dashboard-list-item skills-item" id="last-item">Reading</li>
                
             </ul>
+                <button class="add-task-btn">Add Skill</button>
          </div>
          <div class="card card-4">
-  <h2 class="card-header">Upcoming Schedule        </h2>'
-    <ul class="today-task-list">
-                <li class="today-task-item">Buy eggs</li>
-                <li class="today-task-item">Wash dishes</li>
-                <li class="today-task-item">Clean the floor</li>
+  <h2 class="card-header">Upcoming Schedule</h2>
+   <ul class="dashboard-list">
+                <li class="dashboard-list-item schedule-container"><p class="schedule-time">10:00am-3:00pm</p> <p class="schedule-item">Go to school</p> </li>
+                <li class="dashboard-list-item schedule-container"><p class="schedule-time">3:00pm-6:00pm</p> <p class="schedule-item">Go to gym</p></li>
+                <li class="dashboard-list-item schedule-container" id="last-item"><p class="schedule-time">10:00pm-6:00am</p> <p class="schedule-item">Sleep</p></li>
                
             </ul>
+                <button class="add-task-btn">Add Event</button>
          </div>
          <div class="card card-5">
-  <h2 class="card-header">Time to Focus        </h2>
+  <h2 class="card-header">Time to Focus      </h2>
   <p>
 
     <div class="screen-container">
 <img src="assets\images (1).jpg" class="sound-img" alt="">
     </div>
-    <audio controls autoplay src="" class="sound">
+    <audio controls autoplay src="" class="sound-audio">
 <source src="assets\Quantum Jazz - Passing Fields.mp3" type="audio.mp3">
     </audio>
    
@@ -107,8 +110,9 @@
     </select>
      <div class="noise-shield-container">
       
-        <p class="noise-shield-text">Enable Noise Shield</p>
-          <input type="checkbox" name="noise-shield-input" id="">
+       
+          <input type="checkbox" name="noise-shield-input" class="noise-shield-input">
+           <p class="noise-shield-text">Enable Noise Shield</p>
     </div>
     <button class="focus-session-btn">Start Focus Session</button>
   </p>
