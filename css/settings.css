@@ -249,22 +249,115 @@ body{
 /*Main Content Section*/
 
 .main-content{
-    background-color: #000000;
-    grid-area:main-content;
+    background:linear-gradient(rgb(91, 91, 178),rgb(212, 159, 61));
+  
     display: flex;
     flex-direction: column;
-    justify-content: start;
+   align-items: center;
+   text-align: center;
 }
 
-.main-content-header{
-    margin-top:1vh;
-    margin-bottom:1.5vh;
-    font-size:3vw;
+
+
+.settings-container{
+    
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-header{
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+border:0.1vw solid white;
+overflow:hidden;
+width:90%;
+white-space:nowrap;
+gap:3vw;
+}
+
+
+.settings-header-item{
+    font-weight:bold;
+    
+    color:white;
+    font-size:2vw;
+border-left:0.1vh solid white;
+border-right:0.1vh solid white;
+width:20vw;
+
+
+
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-    text-decoration-line: underline;
-    color:white;
+    align-items: center;
+    border:0.2vw solid black;
 }
+
+.form-input-labels{
+  
+    
+    color:rgb(255, 248, 248);
+    font-weight:600;
+    font-size:1.3vw;
+    margin-bottom:0.5vh;
+    margin:auto;
+    margin-top:0.5vh;
+    justify-content: center;
+    text-align: center;
+    display:flex;
+    
+}
+
+.form-input{
+    height:auto;
+    width:13vw;
+    height:4vh;
+    display:flex;
+    text-align:center;
+    margin:auto;
+    border:0.05vw solid black;
+    border-radius:0.2vw;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+
+
+
+
+
+
+.tasks-btn-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.add-task-btn{
+    margin-top:1.5vh;
+    border-radius:0.5vw;
+    width:7vw; 
+    font-weight:bold;
+    font-size:1vw;
+    height:6vh;
+    border:.3vw solid black;
+    background-color: #666e88;
+    cursor:pointer;
+    
+}
+
 
 
 /*Main Content Section Ends*/

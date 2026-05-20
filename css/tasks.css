@@ -265,7 +265,73 @@ body{
     text-decoration-line: underline;
     color:white;
 }
+.tasks-list-container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 
+}
+.tasks-list{
+    
+    background-color: #384056;
+    width:80%;
+    list-style-type:none;
+    
+    border-radius: 0.3vw;
+    border:0.3vw solid black;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+    display: center;
+    color:green;
+    
+    
+    
+    
+    
+}
+
+.tasks-list-item{
+    color:orange;
+border:0.1vw solid white;
+    
+    border-bottom:0.4vw solid black;
+    height:7vh;
+    gap:2vh;
+    
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-size:1vw;
+    font-weight:500;
+    
+}
+
+
+.tasks-btn-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:2vw;
+
+}
+.add-task-btn{
+    margin-top:1.5vh;
+    border-radius:0.5vw;
+    width:35%; 
+    font-weight:bold;
+    font-size:1vw;
+    height:6vh;
+    border:.1vw solid white;
+    background-color: #666e88;
+    cursor:pointer;
+    
+}
 
 /*Main Content Section Ends*/
 
