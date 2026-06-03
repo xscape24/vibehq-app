@@ -1,0 +1,856 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height:300vh;
+  background-color: rgb(63, 31, 63);
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+#back-btn{
+    height:7vh;
+    width:12vh;
+    background-color: #1870e2;
+    border-radius: 0;
+    margin-top:2vh;
+}
+
+button{
+    height:4vh;
+    width:20vw;
+    background-color: rgb(194, 194, 221);
+    border:0.2vw solid black;
+    border-radius:1vw;
+}
+
+#main-section{
+    
+    font-size:4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    flex-direction:column;
+
+}
+
+
+
+button{
+    height:9vw;
+    width:8vh;
+    font-size:1vw;
+}
+
+#navbar{
+    
+    
+    width:160vw;
+    height:14vh;
+   
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top:1vh;
+    margin-bottom:2vh;
+    border-right:0;
+    border-radius:0vw;
+    padding-top:1vh;
+    
+    
+    
+    
+}
+
+#main-body{
+    height:100vh;
+    width:90vw;
+    background-color: gray;
+    border:0.4vw solid black;
+}
+
+#back-item{
+    width:20vw;
+}
+
+
+.feature-items{
+    
+    display: flex;
+    justify-content: center;
+    height: 14vh;
+    width:19vw;
+    align-items:center;
+    text-decoration-line:none;
+    color:black;
+
+    font-size:2vw;
+    font-weight: 500;
+    flex-direction: row;
+    border:0.4vw solid black;
+ background-color: rgb(135, 137, 163);
+    
+}
+
+#home-nav-item{
+    border-top-left-radius: 0.5vw;
+    border-bottom-left-radius: 0.5vw;
+    border-right:0;
+}
+#settings-nav-item{
+    border-top-right-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+    
+}
+
+#todo-list-nav-item{
+     border-right:0;
+    
+}
+
+#progress-tracker-nav-item{
+    border-right:0;
+    
+}
+#skill-history-nav-item{
+  border-right:0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#secondary-section{
+       font-size:4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    flex-direction:column;
+
+}
+
+
+
+section{
+    background:rgb(46, 180, 140);
+    border:0.5vw solid black;
+    
+    margin-top:0;
+    padding:0;
+    border-radius:1vw;
+    
+    width:80vw;
+    margin-bottom:5vh;
+    margin-top:0;
+    overflow: root;
+    display: flow-root;
+    height:90vh;
+}
+
+
+.features-header{
+    margin-top:.3vw;
+    text-decoration:underline;
+    font-weight:400;
+    font-size:4vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    text-align: center;
+    margin-bottom:1vw;
+    margin-right:2vw;
+}
+
+.features-subheader{
+    margin-top:1vw;
+    margin-bottom:1vw;
+    font-size:2vw;
+}
+
+
+
+/*Home Section */
+
+#skill-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:1vw;
+    gap:1vw;
+}
+
+.skill-label{
+    font-size:2.5vw;
+}
+.skill-dropdown{
+    height:6vh;
+    width:20vw;
+    font-size:1vw;
+    background-color: rgb(221, 200, 169);
+    border:0.2vw solid black;
+}
+input[type="date"]::placeholder{
+    margin-left:4vw;
+}
+
+option{
+    font-family:Arial, Helvetica, sans-serif
+}
+#continue-btn{
+    height:3vw;
+    width:8vw;
+    font-size:1vw;
+    
+    border-radius:2.5vh;
+    
+    background:linear-gradient(rgb(55, 64, 107), rgb(66, 142, 45));
+    border:0.25vw solid black;
+    cursor:pointer;
+}
+
+#date-container{
+    display: flex;
+}
+
+.date-input{
+    height:4vh;
+    width:9vw;
+      border:0.2vw solid black;
+}
+
+#start-date, #end-date{
+  
+    font-size:1vw;
+    background-color: rgb(221, 200, 169);
+}
+
+#dash-icon{
+    height:5vh;
+    width:2vw;
+    margin-left:1vw;
+    margin-right:1vw;
+}
+
+
+/*Home Section End*/
+
+/*To-Do List Section */
+#to-do{
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-position: inside;
+}
+
+#to-do-list{
+    
+    display: flex;
+    flex-direction:column;
+    list-style-position:inside;
+    list-style-type:none;
+    
+}
+
+.checkbox{
+    height:2vh;
+    width:2vw;
+    margin-right:3vh;
+    cursor:pointer;
+}
+
+.list-items{
+    
+    list-style-position:inside;
+    font-size:1vw;
+}
+
+#todo-btn-container{
+    display: flex;
+    justify-content:center;
+    margin-top:2vh;
+}
+
+.to-do-list-btn{
+    background:linear-gradient(rgb(55, 64, 107), rgb(121, 142, 45));
+    cursor:pointer;
+    height:7vh;
+    width:8vw;
+    border-radius:.5vw;
+    font-size:2vw;
+}
+
+#add-to-list-btn{
+    font-size:2vw;
+    font-weight:300;
+    margin-right:2vh;
+   
+}
+
+#remove-from-list-btn{
+    
+}
+
+
+
+#todo-input{
+    width:25vw;
+    height:3vw;
+    margin:auto;
+    text-align: center;
+    font-size:1vw;
+    opacity:0.5;
+}
+
+.todo-item{
+    border:0.1vw solid black;
+    
+}
+
+
+#add-item-text{
+    font-size:2vw;
+}
+
+/*To Do List Section End*/
+
+/*Progress Tracker*/
+
+#progress-tracker{
+    
+    
+}
+
+#progress-bar-container{
+    height:10vw;
+    width:20vw;
+    
+    
+    margin-bottom:3vh;
+    
+    margin-left:3vw;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+#habits-main-section{
+    justify-content: space-between;
+    
+    
+}
+
+#progress-bar{
+    height:8vh;
+    width:4vw;
+    background-color:green;
+    text-align:center;
+    line-height:1vw;
+    color:white;
+    font-size:2vw;
+    font-weight:bold;
+}
+
+#habits-list-header{
+    font-size: 2vw;
+    text-decoration-line: underline;
+    margin-bottom:1vw;
+}
+
+#progress-tracker-table{
+    table-layout:fixed;
+    border:0.20vw solid black;
+    height:1vh;
+    width:2vh;
+    
+    
+    
+}
+tr,th,td{
+    height:0.4vh;
+}
+
+
+.pt-item{
+    font-weight:normal;
+    font-size:0.3vw;
+    height:0.8vh;
+}
+
+.pt-data-cell{
+    border-bottom: solid black;
+    
+    
+}
+span{
+    content: "\2714";
+    color:green;
+    height:0.5vh;
+    width:0.5vw;
+    font-size:0.2vw;
+}
+
+
+
+#progress-tracker-img{
+    display:flex;
+    float:right;
+    height:20vw;
+    width:20vw;
+    
+    
+}
+
+input[type="checkbox"]{
+    height:2vw;
+    width:2vw;
+    margin-right:5vw;
+    cursor:pointer;
+    background-color: green;
+}
+
+/*Progress Tracker Ends */
+
+
+
+
+
+
+/*Skill History Section */
+
+#skill-history{
+    display: flex;
+    flex-direction: column ;
+justify-content: center;
+    
+}
+
+#skill-history-container{
+    display: flex;
+    justify-content: space-around;
+}
+#trophy-img{
+    height:5vw;
+    width:5vw;
+    
+}
+
+
+
+#skill-history-table{
+    border:0.2vw solid black;
+  
+    
+    text-align: center;
+    justify-content: centre;
+}
+
+th, .sh-data-cell {
+    border-bottom:0.1vh solid black;
+    border-right:0.1vw solid black;
+}
+
+.sh-data-cell{
+    height:.4vw;
+    width:.4vw;
+    
+    padding-left:1vw;
+    padding-right:1vw;
+    background-color:blue;
+    
+}
+
+
+#skill-history-img{
+    height:20vw;
+    width:23vw; 
+    border-radius:1vw;
+    border:0.2vw solid black;
+}
+
+/*Skill History Section End*/
+
+/*Settings Section */
+
+
+#settings{
+    
+    border:1vw solid black;
+    height:130vh;
+    
+}
+#settings-header{
+    text-decoration-line: underline;
+}
+
+.settings-section-header{
+    text-decoration-line:underline;
+    font-size:3vw;
+    margin-top:1.4vh;
+}
+#settings-list{
+    list-style-type:none;
+    display:flex;
+    flex-direction:row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2vw;
+    border-radius:2vw;
+    
+    justify-content: space-between;
+    width:96%;
+    border:0.5vw solid black;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: center;
+    justify-content: space-between;
+    text-align: center;
+    margin:auto;
+    align-items: center;
+    border-right:none;
+    
+    
+}
+.settings-items{
+    height:6vw;
+    border-right:0.5vw solid black;
+    padding-right:0.5vw;
+    padding-left:0.5vw;
+    margin-right:0.5vw;
+    margin-left:0.5vw;
+    padding-top:0.5vw;
+    border-radius:0vw 0vw 0vw 0vw;
+    border-bottom:0;
+    cursor:pointer;
+}
+
+
+#help-support-btn{
+    border-right:0;
+}
+.settings-box{
+    height:40vw;
+    width:75vw;
+  
+        display: flex;
+   
+    align-items: center;
+    text-align:center;
+    flex-direction:column;
+
+ 
+ 
+    border:.5vw solid black;
+
+    background:rgb(208, 156, 66);
+    padding-bottom:0;
+    margin:auto;
+    border-radius:0.5vw;
+        border-top-left-radius: 0;
+    border-top-right-radius: 0;
+     border-top:0;
+}
+
+/*Settings Section Ends*/
+
+/*Secondary Section Ends*/
+
+
+
+
+
+
+
+
+/*Box 1*/
+
+settings-box-1{
+    justify-content: center;
+    display: flex;
+}
+.connected-accounts-header{
+    font-size:1.8vw;
+    
+    font-weight:bold;
+}
+
+.account-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#social-media-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type:none;
+}
+
+.social-media-item{
+    
+    background-color: white;   
+    height:6vh;
+    width:14vw;
+    white-space:nowrap;
+    font-weight:bold;
+    font-size:1vw;
+    border-radius:1.3vh;
+    
+    border:0.2vw solid black;
+}
+
+#google-item{
+    background-color: whitesmoke;
+    
+}
+#apple-item{
+    background-color: antiquewhite;
+}
+#facebook-item{
+    background-color: #1870e2;
+}
+
+.logout-btn{
+    border-radius:5vw;
+    font-size:2vw;
+    font-weight: bold;
+    border: 0.5vh solid black;
+    height:4vw;
+    width:25vh;
+}
+
+
+
+/*Box 2*/
+#box-2-header{
+    font-size:3vw;
+}
+
+#box-2-text{
+    font-size:2vw;
+}
+
+#theme-change-btn{
+    font-size:1vw;
+    height:5vw;
+    width:25vh;
+    font-weight:500;
+    background-color: rgb(201, 176, 144);
+}
+
+
+/*Box 2 Ends*/
+
+
+
+
+#help-support-container{
+    display: flex;
+    flex-direction:row;
+    float:bottom;
+}
+
+#call-btn{
+    height:3.5vw;
+    width:8vw;
+    
+}
+
+#chat-btn{
+    height:3.5vw;
+    width:8vw;
+}
+
+
+
+
+
+
+
+.settings-box{
+    font-size:2vw;
+    
+}
+
+
+
+#settings-form{
+    margin-bottom:2vw;
+}
+
+.settings-label{
+    font-size:1vw;
+    
+}
+
+
+.settings-input{
+    height:4vh;
+    width:10vw;
+}
+
+#settings-icon{
+    height:2vh;
+    width:2vw;
+    margin-top:1vw;
+}
+
+
+
+
+.settings-btn{
+    height:13vw;
+    width:70vw;
+    font-size:2vw;
+    border:10px solid black;
+    border-radius:10vw;
+    cursor:pointer;
+    background:linear-gradient (orange, rgb(111, 111, 154));
+    margin-top:10vw;
+    bottom:0;
+    float:bottom;
+}
+.save-changes-btn{
+    margin-right:10vw;
+    margin-top:0;
+    height:8vh;
+    width:20vh;
+    font-size:1.2vw;
+    border:0.16vw  solid black;
+    border-radius:2vw;
+}
+
+.cancel-btn{
+    height:8vh;
+    width:20vh;
+    font-size:1.4vw;
+    border:0.16vw solid black;
+    border-radius:2vw;
+}
+
+#settings-footer{
+    margin-top:0;
+    margin-bottom:20vw;
+}
+
+/*Settings Section End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer Section */
+
+#footer{
+    
+    width:100vw;
+    height:5vw;
+background:linear-gradient( rgb(83, 53, 85), rgb(63, 70, 74));
+    border-top:0.5vh solid black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    float:bottom;
+    margin-top:3vh;
+    
+    
+    
+    
+}
+
+#footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom:0;
+    margin:auto;
+}
+
+#footer-text{
+    font-size:1.1vw;
+    margin-right:2vh;
+}
+.contact-badge{
+    height:7vh;
+    width:3.5vw;
+    margin-right:1vw;
+
+}
+
+#linkedin-icon{
+
+}
+
+#github-icon{
+    
+}
+#twitter-icon{
+    
+}
+
+/*End of Footer Section */
