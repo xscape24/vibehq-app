@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VibeHQ - Find your flow</title>
     <link rel="stylesheet" href="css\tasks.css">
-    <script src="script.js"></script>
+    <script src="tracker.js"></script>
 </head>
 <body>
     
@@ -44,21 +44,28 @@
       
      
 
-           <h1 class="main-content-header">Today's Tasks      </h1>
+     
             <div class="tasks-list-container">
-            <ul class="tasks-list">
-                <li class="tasks-list-item tasks-item">Buy eggs</li>
-                <li class="tasks-list-item tasks-item">Wash dishes</li>
-                <li class="tasks-list-item tasks-item" id="last-item">Clean the floor</li>
+                  <h1 class="main-content-header"> To Do List</h1>
+            <ul id="tasks-list">
+                
                
             </ul>
+            <input type="text" name="" placeholder="Add a new item..." id="todo-input">
         </div>
-          <div class="tasks-btn-container">
-         
-          <button class="add-task-btn">Add Task</button>
-           <button class="add-task-btn">Add Project</button>
-         
-         </div>
+
+
+     
+      
+       
+        <div id="todo-btn-container">
+            <button class="to-do-list-btn" id="add-to-list-btn" onclick="addItem()">  <p id="add-item-text">Add Task  </p> </button>
+            <button class="to-do-list-btn" id="remove-from-list-btn" onclick="removeItem()">  <p id="remove-item-text">Remove Task</p> </button>
+        </div>
+
+
+
+       
          </div>
          
          

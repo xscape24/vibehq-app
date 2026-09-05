@@ -259,7 +259,7 @@ body{
 }
 
 .main-content-header{
-    
+    margin-top:1vh;
     
     font-size:3vw;
     
@@ -270,7 +270,7 @@ body{
 }
 
 .main-content-subheader{
-    color:white;
+     color:white;
 }
 
 .calendar-container{
@@ -281,6 +281,8 @@ body{
     gap:3vh;
     margin-top:2vh;
     margin-bottom:2vh;
+   
+    
 }
 
 .events-list-container{
@@ -289,31 +291,49 @@ body{
     align-items: center;
     text-align: center;
     border:0.15vw solid white;
+     border-radius:2vw;
+     background-color:rgb(169, 145, 145);
 }
 
 .events-list-header{
     font-size:2vw;
-    color:white;
+    color:rgb(254, 254, 254);
 text-decoration-line: underline;
     font-weight:bold;
     display: flex;
+    margin-bottom:1vh;
+    margin-top:1vh;
 }
 .events-list{
-   background:linear-gradient(rgb(91, 91, 178),rgb(212, 159, 61));
-    border-radius:0.1vw;
-    height:100%;
+background-color:rgb(169, 145, 145);
+    border-radius:2vw;;
+    height:70%;
  
     display: flex;
     flex-direction: column;
-    gap:2vh;
+    gap:1.5vh;
     width:20vw;
     
 }
 
 .events-item{
-border:0.2vw solid black;
+
 font-size:2vw 
     
+}
+
+.add-event-btn{
+  
+    width:10vw;
+    height:5vh;
+    background-color: #666e88;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    border-radius:.1vw;
+    justify-content: center;
+    font-size:1vw;
+    border:.25vw solid black;
+    cursor:pointer;
 }
 
 .calendar{

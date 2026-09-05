@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VibeHQ - Find your flow</title>
     <link rel="stylesheet" href="css\skills.css">
-    <script src="script.js"></script>
+    <script src="src\skills.js"></script>
 </head>
 <body>
     
@@ -42,6 +42,8 @@
             <div class="main-content">
 
                 <h1 class="main-content-header">Skill Library</h1>
+                <h2 class="main-content-subheader">Lock in on your skills!</h2>
+         
             
          <div class="skills-container">
      
@@ -75,10 +77,67 @@
         </table>
 
         <div class="skills-btn-container">
-             <button class="add-task-btn">Add Skill</button>
-           <button class="add-task-btn">Add Project</button>
+             <button class="add-task-btn" onclick="popupFn()">Add Skill</button>
+           <button class="add-task-btn" onclick="popupFn()">Add Project</button>
         
         </div>
+    
+         <div id="overlay"></div>
+    <div id="popupDialog">
+        <section id="home" >
+        
+        <h1 class="features-header">Home</h1>
+        <p class="features-subheader">Track your goals, measure your progress, and build your skills one step at a time. Use the navigation above to explore your to-do list, progress tracker, and more.</p>
+        <form action="/actionpage.php" id="skill-form">
+            <label for="" class="skill-label">Please select a skill:</label>
+            <select  class="skill-dropdown" placeholder="--Please select an option--">
+                <option value="default">--Please select an option--" </option>
+                <option value="meditation">Meditation </option>
+                <option value="exercise">Exercise </option>
+                <option value="reading">Reading </option>
+                <option value="studying">Studying </option>
+                <option value="breathwork">Breathwork </option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="" class="skill-label">Select habit frequency:</label>
+            <select  class="skill-dropdown" placeholder="--Please select an option--">
+                <option value="default">--Please select an option--" </option>
+                <option value="frequency1">Daily</option>
+                <option value="frequency2">Weekly</option>
+                <option value="frequency3">Monthly </option>
+                <option value="frequency4">--Custom-- </option>
+                
+            </select>
+            
+            <label for="" class="skill-label">Select Start and End Date:</label>
+            <div id="date-container">
+                <input type="date" name="" id="start-date" class="date-input" min="2025-09-05">
+             <img src="assets\noun_dash.png" id="dash-icon"/>
+               
+                <input type="date" name="" id="end-date" class="date-input">
+            </div>
+            
+            
+            
+            
+        </form>
+        
+        <button id="continue-btn" onclick="closeFn()">Continue</button>
+        
+    </section>
+       
+    </div>
+      
+      
+    </div>
+    
+
+
+
+
+
+
             
         </div>
 

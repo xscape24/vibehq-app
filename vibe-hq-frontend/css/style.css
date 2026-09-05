@@ -102,6 +102,7 @@ body{
     font-size:1vw;
         border:.25vw solid black;
         margin-top:.5vh;
+    cursor:pointer;
 }
 
 #profile-img{
