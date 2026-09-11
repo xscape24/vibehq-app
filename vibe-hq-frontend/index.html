@@ -31,17 +31,67 @@
             
             <div class="sidebar">
                 <a href="index.html" class="sidebar-link dashboard-link">   <img src="assets\home.png" class="sidebar-img dashboard-img"><p class="dashboard-text"> Dashboard</p></p></a>
-                <a href="calendar.html" class="sidebar-link calendar-link">   <img src="assets\calendar.svg" class="sidebar-img calendar-img">Calendar</a>
-                <a href="tasks.html" class="sidebar-link tasks-link">   <img src="assets\card-list.svg" class="sidebar-img tasks-img"><p class="tasks-text">My Tasks</p></a>
+                <a href="calendar.html" class="sidebar-link calendar-link">   <img src="assets\calendar.svg" class="sidebar-img calendar-img">  <p id="calendar-text">Calendar</p> </a>
+                <a href="tasks.html" class="sidebar-link tasks-link">   <img src="assets\clipboard.png" class="sidebar-img tasks-img"><p class="tasks-text">My Tasks</p></a>
                 <a href="skills.html" class="sidebar-link" id="library-link">   <img src="assets\profile-list.svg" class="sidebar-img" id="library-icon">Skill Library</a>
             
-                <a href="rooms.html" class="sidebar-link rooms-link">   <img src="assets\mic-mute.svg" class="sidebar-img rooms-img"> Quiet Rooms</a>
+                <a href="rooms.html" class="sidebar-link rooms-link">   <img src="assets\mic-mute.svg" class="sidebar-img rooms-img"><p id="rooms-text"> Quiet Rooms</p></a>
                  <a href="settings.html" class="sidebar-link" id="settings-link">   <img src="assets\gear-wide.svg" class="sidebar-img" id="settings-img"><p id="settings-text">Settings</p></a>
                 
             </div>
             <div class="main-content">
+ <div id="overlay"></div>
+    <div id="popupDialog">
+        <section id="home" >
+        
+        <h1 class="features-header">Home</h1>
+        <p class="features-subheader">Track your goals, measure your progress, and build your skills one step at a time. Use the navigation above to explore your to-do list, progress tracker, and more.</p>
+        <form action="/actionpage.php" id="skill-form">
+            <label for="" class="skill-label">Please select a skill:</label>
+            <select  class="skill-dropdown" placeholder="--Please select an option--">
+                <option value="default">--Please select an option--" </option>
+                <option value="meditation">Meditation </option>
+                <option value="exercise">Exercise </option>
+                <option value="reading">Reading </option>
+                <option value="studying">Studying </option>
+                <option value="breathwork">Breathwork </option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="" class="skill-label">Select habit frequency:</label>
+            <select  class="skill-dropdown" placeholder="--Please select an option--">
+                <option value="default">--Please select an option--" </option>
+                <option value="frequency1">Daily</option>
+                <option value="frequency2">Weekly</option>
+                <option value="frequency3">Monthly </option>
+                <option value="frequency4">--Custom-- </option>
+                
+            </select>
+            
+            <label for="" class="skill-label">Select Start and End Date:</label>
+            <div id="date-container">
+                <input type="date" name="" id="start-date" class="date-input" min="2025-09-05">
+             <img src="assets\noun_dash.png" id="dash-icon"/>
+               
+                <input type="date" name="" id="end-date" class="date-input">
+            </div>
+            
+            
+            
+            
+        </form>
+        <div id="popup-btn-container">
+        <button id="cancel-btn" onclick="closeFn()">Cancel</button>
+        <button id="continue-btn" onclick="closeFn()">Apply </button>
+        </div>
+        
+    </section>
+       
+    </div>
+                 
 
                 <h1 class="main-content-header">Dashboard Overview</h1>
+                
             
          <div class="main-content-container">
   <div class="card card-1">
@@ -52,7 +102,7 @@
                 <li class="dashboard-list-item tasks-item" id="last-item">Clean the floor</li>
                
             </ul>
-            <button class="add-task-btn">Add Task</button>
+            <button class="add-task-btn" onclick="popupFn()">Add Task</button>
          </div>
          <div class="card  card-2">
   <h2 class="card-header">Active Projects        </h2>
@@ -62,7 +112,7 @@
                 <li class="dashboard-list-item projects-item" id="last-item">Remanned</li>
                
             </ul>
-                <button class="add-task-btn">Add Project</button>
+                <button class="add-task-btn" onclick="popupFn()">Add Project</button>
          </div>
          <div class="card card-3">
   <h2 class="card-header">Skills to Improve       </h2>
@@ -72,7 +122,7 @@
                 <li class="dashboard-list-item skills-item" id="last-item">Reading</li>
                
             </ul>
-                <button class="add-task-btn">Add Skill</button>
+                <button class="add-task-btn" onclick="popupFn()">Add Skill</button>
          </div>
          <div class="card card-4">
   <h2 class="card-header">Upcoming Schedule</h2>
@@ -82,7 +132,7 @@
                 <li class="dashboard-list-item schedule-container" id="last-item"><p class="schedule-time">10:00pm-6:00am</p> <p class="schedule-item">Sleep</p></li>
                
             </ul>
-                <button class="add-task-btn">Add Event</button>
+                <button class="add-task-btn" onclick="popupFn()">Add Event</button>
          </div>
          <div class="card card-5">
   <h2 class="card-header focus-session-header">Time to Focus      </h2>

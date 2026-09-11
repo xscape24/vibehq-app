@@ -45,7 +45,7 @@ body{
     list-style-type:none;
     background-color: rgb(157, 115, 150);
     grid-area:navbar;
-    height:15vh;
+ 
     width:100vw;
     
 }
@@ -249,7 +249,7 @@ body{
 /*Main Content Section*/
 
 .main-content{
-    background-color: #060606;
+  
     grid-area:main-content;
     display: flex;
     flex-direction: column;
@@ -273,19 +273,21 @@ body{
 }
 #tasks-list{
     
-    background-color: #384056;
+    background-color: #adb1bb;
     width:30%;
     list-style-type:none;
     
     border-radius: 0.3vw;
-    border:0.3vw solid black;
-    justify-content: space-evenly;
+
+  display: flex;
+  justify-content: center;
     text-align: center;
     align-items: center;
     
-
+height:100%vh;
     margin-bottom:2vh;
     margin-top:1vh;
+    gap:1vh;
     
     
     
@@ -334,7 +336,7 @@ border:0.1vw solid white;
 
 
 
-#todo-input{
+#to-do-input{
     width:25vw;
     height:3vw;
     margin:auto;
@@ -343,13 +345,13 @@ border:0.1vw solid white;
     opacity:0.5;
 }
 
-.todo-item{
+.to-do-item{
     border:0.1vw solid black;
     
 }
 
 
-#todo-btn-container{
+#to-do-btn-container{
     display: flex;
     justify-content:center;
     margin-top:2vh;

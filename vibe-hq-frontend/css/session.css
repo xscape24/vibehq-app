@@ -55,14 +55,7 @@ background:linear-gradient(rgb(151, 202, 210), pink);
 }
 /*Focus Header Section */
 
-.back-btn{
-    height:6vh;
-    width:8vw;
-    background-color: skyblue;
-    font-weight:bold;
-    font-size:1vw;
-    
-}
+
 
 .focus-header-container{
     display: flex;
@@ -74,6 +67,27 @@ background:linear-gradient(rgb(151, 202, 210), pink);
     align-items: center;
     text-align: center;
 }
+.back-btn{
+    height:6vh;
+    width:8vw;
+    background-color: skyblue;
+    font-weight:bold;
+    font-size:1vw;
+    border:0.4vw solid black;
+  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration-line:none;
+    
+}
+
+.back-arrow-icon{
+    height:1vh;
+    width:1vw;
+}
+
 
 .skill-container{
     background-color: purple;

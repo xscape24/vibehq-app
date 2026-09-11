@@ -249,7 +249,7 @@ body{
 /*Main Content Section*/
 
 .main-content{
-    background-color: #000000;
+    background-color: #1a2032;
     grid-area:main-content;
     display: flex;
     flex-direction: column;
@@ -287,7 +287,7 @@ body{
 
 .skills-table{
     
-    background-color: #8a9bc9;
+    background-color: rgb(68, 68, 96,0.8);
     
     
     
@@ -306,6 +306,9 @@ table, th, td{
     border:0.2vw solid white;
 }
 
+.skills-table-header, .skills-table-data{
+    font-size:1.5vw;
+}
 .skills-table-header{
     height:10vh;
     width:15vw;
@@ -359,10 +362,13 @@ table, th, td{
     align-items: center;
     justify-content: center;
     margin-bottom:1vw;
-    gap:1vw;
+    gap:.8vw;
      background-color:gray;
 }
 
+.features-header{
+    margin-top:1vh;
+}
 .skill-label{
     font-size:1.7vw;
 }
@@ -382,9 +388,34 @@ input[type="date"]::placeholder{
 option{
     font-family:Arial, Helvetica, sans-serif
 }
+
+#popup-btn-container{
+    display: flex;
+    flex-direction:row;
+    margin-bottom:2vh;
+    gap:1vw;
+
+}
+
+#cancel-btn{
+height:2.2vw;
+    width:7vw;
+    font-size:1vw;
+    
+    border-radius:1vh;
+    
+    background-color:#33394c;
+    color:white;
+    border:0.25vw solid black;
+    cursor:pointer;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin:auto;
+}
 #continue-btn{
-    height:2.5vw;
-    width:8vw;
+    height:2.2vw;
+    width:7vw;
     font-size:1vw;
     
     border-radius:1vh;
@@ -426,7 +457,7 @@ option{
 }
 
 
-/*PopUp Section End*/
+
  #popupDialog {
             display: none;
             position: fixed;
@@ -450,6 +481,7 @@ option{
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
+        /*PopUp Section End*/
 /*Main Content Section Ends*/
 
 /*Footer Section*/

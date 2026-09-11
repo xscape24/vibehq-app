@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VibeHQ - Find your flow</title>
     <link rel="stylesheet" href="css\calendar.css">
-    <script src="script.js"></script>
+    <script src="src\calendar.js"></script>
 </head>
 <body>
     
@@ -55,9 +55,58 @@
             <li class="events-item">Meditate</li>
             <li class="events-item">Workout</li>
          </ul>
-         <button class="add-event-btn">Add Event</button>
+         <button class="add-event-btn" onclick="popupFn()">Add Event</button>
+         <div id="overlay"></div>
+    <div id="popupDialog">
+        <section id="home" >
+        
+        <h1 class="features-header">Home</h1>
+        <p class="features-subheader">Track your goals, measure your progress, and build your skills one step at a time. Use the navigation above to explore your to-do list, progress tracker, and more.</p>
+        <form action="/actionpage.php" id="skill-form">
+            <label for="" class="skill-label">Please select a skill:</label>
+            <select  class="skill-dropdown" placeholder="--Please select an option--">
+                <option value="default">--Please select an option--" </option>
+                <option value="meditation">Meditation </option>
+                <option value="exercise">Exercise </option>
+                <option value="reading">Reading </option>
+                <option value="studying">Studying </option>
+                <option value="breathwork">Breathwork </option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="" class="skill-label">Select habit frequency:</label>
+            <select  class="skill-dropdown" placeholder="--Please select an option--">
+                <option value="default">--Please select an option--" </option>
+                <option value="frequency1">Daily</option>
+                <option value="frequency2">Weekly</option>
+                <option value="frequency3">Monthly </option>
+                <option value="frequency4">--Custom-- </option>
+                
+            </select>
+            
+            <label for="" class="skill-label">Select Start and End Date:</label>
+            <div id="date-container">
+                <input type="date" name="" id="start-date" class="date-input" min="2025-09-05">
+             <img src="assets\noun_dash.png" id="dash-icon"/>
+               
+                <input type="date" name="" id="end-date" class="date-input">
+            </div>
+            
+            
+            
+            
+        </form>
+        <div id="popup-btn-container">
+        <button id="cancel-btn" onclick="closeFn()">Cancel</button>
+        <button id="continue-btn" onclick="closeFn()">Apply </button>
         </div>
-       #
+        
+    </section>
+       
+    </div>
+      
+        </div>
+       
 
             
             <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=ZWJlbmR1d2ltYW5hQGdtYWlsLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%230b8043" style="border:solid 1px #777" width="900" height="400" margin-bottom="-5vh" frameborder="0" scrolling="yes" class="calendar"></iframe>
