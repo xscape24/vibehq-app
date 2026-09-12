@@ -431,7 +431,7 @@ margin:auto;
 #row-container-3{
    
     width:90%;
-   height:10vh;
+   height:9.5vh;
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
@@ -515,9 +515,9 @@ margin:auto;
 
 }
 #theme-label{
-    font-size:6vw;
+    font-size:8vw;
      color:white;
-    font-size:1vw;
+    font-size:1.5vw;
     font-weight:bold;
 }
 
@@ -540,6 +540,8 @@ margin:auto;
     font-size:1vw;
     cursor:pointer;
     margin-right:2vw;
+    border-radius: 1vw;
+        background:linear-gradient(rgb(64, 57, 164),rgb(176, 114, 47)) ;
 }
 
 .save-changes-btn{
@@ -548,6 +550,8 @@ margin:auto;
     font-weight:bold;
     font-size:1vw;
     cursor:pointer;
+    border-radius: 1vw;
+    background:linear-gradient(rgb(64, 57, 164),rgb(176, 114, 47)) ;
 }
 
 

@@ -96,7 +96,7 @@ body{
 
     width:10vw;
     height:8vh;
-    background-color: #666e88;
+    background-color: #4a526c;
     font-weight:bold;
     color:rgb(0, 0, 0);
     border-radius:1vw;
@@ -107,6 +107,15 @@ body{
     cursor:pointer;
 }
 
+#about-btn{
+
+   
+      
+}
+
+#focus-room-btn{
+
+}
 #profile-img{
     margin-bottom:2.2vh;
     width:4.3vw;
@@ -147,11 +156,11 @@ body{
     margin-right:-.04vw;
 }
 
-.calendar-img{
-    height:5.5vh;
-    width:5.5vw;
-    margin-left:-1.1vw;
-    margin-right:-.1vw;
+#calendar-img{
+    height:6vh;
+    width:3vw;
+    margin-left:0vw;
+   
 }
 .tasks-img{
     margin-left:-1vw;
@@ -227,7 +236,7 @@ margin-right:-.6vw;
      margin-left:0.1vw;
 }
 #calendar-text{
-    margin-left:-.5vw;
+    margin-left:1vw;
 }
 .tasks-text{
     margin-left:-1vw;
@@ -312,6 +321,7 @@ margin-right:-.6vw;
     width:20vw;
     font-size:1vw;
     background-color: rgb(221, 200, 169);
+   
     border:0.2vw solid black;
 }
 
@@ -321,7 +331,8 @@ input[type="date"]::placeholder{
 }
 
 option{
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 #popup-btn-container{
@@ -617,25 +628,27 @@ height:2.2vw;
     
     
     flex-direction:column;
-    border:0.5vw solid black;
+border:0.5vw solid black;
    
     width:19vw;
     height:23vh;
     float:right;
     
     
-    border-radius:0.5vw;
+    border-radius:0.3vw;
+    margin-left:.2vw;
+    margin-right:.2vw;
     
 }
 
-.sound-img{
+#sound-img{
     height: 100%;
     width:100%;
     
 }
 
 .arrow{
-    height:2vh;
+    height:4vh;
     width:2vw;
 }
 
@@ -698,7 +711,7 @@ height:2.2vw;
     margin-top:2.2vh;
     border:0.1vw solid rgb(223, 206, 206);;
     justify-content: center;
-    margin-left:0;
+    margin-#:0;
     cursor:pointer;
     
 }

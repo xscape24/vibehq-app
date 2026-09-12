@@ -20,8 +20,8 @@
                 
                 <div class="logo-2-container">
                     
-<button class="vibe-hq-btn" onclick="window.location.href='session.html';">Enter Focus Room</button>
-                 <button class="vibe-hq-btn" onclick="window.location.href='about.html';">What is Vibe HQ?</button>
+<button class="vibe-hq-btn" id="focus-room-btn" onclick="window.location.href='session.html';">Enter Focus Room</button>
+                 <button class="vibe-hq-btn" id="about-btn" onclick="window.location.href='about.html';">What is Vibe HQ?</button>
                    
                     <img src="assets\user.png" class="nav-img" id="profile-img" alt=""></li>
                     
@@ -31,7 +31,7 @@
             
             <div class="sidebar">
                 <a href="index.html" class="sidebar-link dashboard-link">   <img src="assets\home.png" class="sidebar-img dashboard-img"><p class="dashboard-text"> Dashboard</p></p></a>
-                <a href="calendar.html" class="sidebar-link calendar-link">   <img src="assets\calendar.svg" class="sidebar-img calendar-img">  <p id="calendar-text">Calendar</p> </a>
+                <a href="calendar.html" class="sidebar-link" id=" calendar-link">   <img src="assets\calendar.png" class="sidebar-img"id= "calendar-img">  <p id="calendar-text">Calendar</p> </a>
                 <a href="tasks.html" class="sidebar-link tasks-link">   <img src="assets\clipboard.png" class="sidebar-img tasks-img"><p class="tasks-text">My Tasks</p></a>
                 <a href="skills.html" class="sidebar-link" id="library-link">   <img src="assets\profile-list.svg" class="sidebar-img" id="library-icon">Skill Library</a>
             
@@ -152,6 +152,7 @@
    
      <label for="theme" class="dropdown-label">Enter preferred theme.</label>
     <select name="theme" class="sound-dropdown">
+        <option disabled selected hidden value="" class="default-dropdown">--Select a theme--</option>
         <option value="ambience" class="sound-item">Lofi Cafe</option>
         <option value="cloudy" class="sound-item">Rainy Day</option>
         <option value="fireplace"  class="sound-item">Sunset Bliss</option>
@@ -159,6 +160,7 @@
     </select>
     <label for="sounds" class="dropdown-label sound-dropdown-label">Enter preferred sounds. </label>
     <select name="sounds" class="sound-dropdown">
+        <option disabled selected hidden value="" class="default-dropdown">--Select a sound--</option>
         <option value="ambience" class="sound-item">Ambience</option>
         <option value="cloudy" class="sound-item">Cloudy</option>
         <option value="fireplace"  class="sound-item">Fireplace</option>

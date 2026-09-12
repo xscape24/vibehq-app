@@ -93,7 +93,7 @@ body{
 
     width:10vw;
     height:8vh;
-    background-color: #666e88;
+    background:linear-gradient(rgb(141, 57, 164),rgb(176, 114, 47));
     font-weight:bold;
     color:rgb(0, 0, 0);
     border-radius:1vw;
@@ -101,6 +101,18 @@ body{
     font-size:1vw;
         border:.25vw solid black;
         margin-top:.5vh;
+    cursor:pointer;
+}
+
+#about-btn{
+
+   
+       background:linear-gradient(rgb(141, 57, 164),rgb(176, 114, 47));
+
+}
+
+#focus-room-btn{
+    background:linear-gradient(rgb(141, 57, 164),rgb(176, 114, 47));
 }
 
 #profile-img{

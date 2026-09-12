@@ -67,19 +67,24 @@ background:linear-gradient(rgb(151, 202, 210), pink);
     align-items: center;
     text-align: center;
 }
+
+.back-btn-link{
+    text-decoration-line: none;
+}
 .back-btn{
     height:6vh;
     width:8vw;
     background-color: skyblue;
     font-weight:bold;
     font-size:1vw;
-    border:0.4vw solid black;
+    border:0.2vw solid black;
   
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    text-decoration-line:none;
+   
+    border-radius: 1vw;
     
 }
 
