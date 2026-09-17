@@ -39,14 +39,20 @@ const a=urlParams.get('audio');
 
 
   
-        const value3=urlParams.get('imageSource');
-       const v= document.getElementById('main-content');
-        v.style.backgroundImage='url("assets/ambience1.jpg")';
-        if(value3){
-            v.style.backgroundImage='url("assets/ambience1.jpg")';
-           if(v){
-        v.style.backgroundImage=`url("${value3}")`;
-        document.getElementById('display3').textContent=value3;
-           }
-        }
+        let value3=urlParams.get("imageSource");
+       let v= document.getElementById('main-content');
 
+       
+if (v) {
+    // 1. ALWAYS set the default background first so it never opens blank
+    v.style.backgroundImage = 'url("/assets/ambience1.jpg")';
+    v.style.backgroundSize = "cover";
+    v.style.backgroundPosition = "center";
+
+    // 2. If the user picked a custom image, override the default
+    if (value3) {
+        v.style.backgroundImage = `url("${value3}")`;
+
+       
+    }
+}

@@ -37,14 +37,13 @@ body{
 
     display: flex;
     flex-direction: column;
-background-image: url("assets/ambience1.jpg");
+
     align-items:center; /*horizontally centering*/
     height:120vh;
     
 }
 
 #main-content{
-   background-image: url("assets/ambience1.jpg");
 }
 .calendar-container{
     display:flex;
