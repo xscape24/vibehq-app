@@ -136,30 +136,25 @@
          </div>
          <div class="card card-5">
   <h2 class="card-header focus-session-header">Time to Focus      </h2>
+  <form action="session.html" method="GET">
   <p>
     <div class="screen-box">
 <img src="assets\left-arrow.png" class="arrow" id="left-arrow" onclick="changeScreenLeft()" alt="">
     <div class="screen-container">
-       <img src="assets\images (1).jpg" id="sound-img" alt="">
+       <img src="assets\ambience1.jpg" id="sound-img" alt="">
 
     </div>
     <img src="assets\right-arrow.png" class="arrow right-arrow" onclick="changeScreenRight()"alt="">
+    <input type="hidden" id="imageSource" name="imageSource" value="assets\ambience1.jpg">
     </div>
 
     <audio controls autoplay src="" class="sound-audio">
 <source src="assets\Quantum Jazz - Passing Fields.mp3" type="audio.mp3">
     </audio>
-   
-     <label for="theme" class="dropdown-label">Enter preferred theme.</label>
-    <select name="theme" class="sound-dropdown">
-        <option disabled selected hidden value="" class="default-dropdown">--Select a theme--</option>
-        <option value="ambience" class="sound-item">Lofi Cafe</option>
-        <option value="cloudy" class="sound-item">Rainy Day</option>
-        <option value="fireplace"  class="sound-item">Sunset Bliss</option>
-        <option value="forest" class="sound-item">Forest Hush</option>
-    </select>
-    <label for="sounds" class="dropdown-label sound-dropdown-label">Enter preferred sounds. </label>
-    <select name="sounds" class="sound-dropdown">
+
+  
+    <label for="sound" class="dropdown-label sound-dropdown-label">Enter preferred sounds. </label>
+    <select name="sound" class="sound-dropdown">
         <option disabled selected hidden value="" class="default-dropdown">--Select a sound--</option>
         <option value="ambience" class="sound-item">Ambience</option>
         <option value="cloudy" class="sound-item">Cloudy</option>
@@ -172,9 +167,11 @@
           <input type="checkbox" name="noise-shield-input" class="noise-shield-input">
            <p class="noise-shield-text">Enable Noise Shield</p>
     </div>
-    <a href="session.html">
-    <button class="focus-session-btn" href="session.html">Start Focus Session</button></a>
+   
+    <button class="focus-session-btn"  type="submit">Start Focus Session</button>
+    
   </p>
+  </form>
          </div>
          
          </div>
@@ -216,7 +213,7 @@
             </div>
             
             <footer class="footer">
-               
+               <p id="display"></p>
                 
                 <a href="https://www.linkedin.com/in/eben-nduwimana/">
                     <img src="assets\hd-linkedin-square-black-icon-transparent-background-7017516949739946gsykkwdmd (1).png" id="linkedn-icon" class="contact-badge"  alt="">
