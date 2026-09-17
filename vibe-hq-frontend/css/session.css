@@ -228,7 +228,9 @@ input[type="checkbox"]{
     height:3vh;
     width:3vw;
     background-color: green;
+    border:1vw solid black;
 }
+
 
 .study-container{
 
