@@ -147,7 +147,7 @@
     <img src="assets\right-arrow.png" class="arrow right-arrow" onclick="changeScreenRight()"alt="">
     <input type="hidden" id="imageSource" name="imageSource" value="assets\ambience1.jpg">
     </div>
-
+<div class="focus-settings">
     <audio controls autoplay src="" class="sound-audio">
 <source src="assets\Quantum Jazz - Passing Fields.mp3" type="audio.mp3">
     </audio>
@@ -161,6 +161,15 @@
         <option value="fireplace"  class="sound-item">Fireplace</option>
         <option value="forest" class="sound-item">Forest</option>
     </select>
+
+      <label for="sound" class="dropdown-label sound-dropdown-label">Enter sound volume. </label>
+    <select name="sound" class="sound-dropdown">
+        <option disabled selected hidden value="" class="default-dropdown">--Select sound volume--</option>
+        <option value="soft" class="sound-item">Soft</option>
+        <option value="medium" class="sound-item">Medium</option>
+        <option value="high"  class="sound-item">High</option>
+        
+    </select>
      <div class="noise-shield-container">
       
        
@@ -169,7 +178,7 @@
     </div>
    
     <button class="focus-session-btn"  type="submit">Start Focus Session</button>
-    
+    </div>
   </p>
   </form>
          </div>

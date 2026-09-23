@@ -630,8 +630,8 @@ height:2.2vw;
     flex-direction:column;
 border:0.5vw solid black;
    
-    width:19vw;
-    height:23vh;
+    width:19.5vw;
+    height:24vh;
     float:right;
     
     
@@ -648,13 +648,20 @@ border:0.5vw solid black;
 }
 
 .arrow{
-    height:4vh;
-    width:2vw;
+    height:3vh;
+    width:1.8vw;
 }
-
+.focus-settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
 .sound-audio{
     
-    margin-bottom:2vh;
+    margin-bottom:1vh;
     height:5vh;
     width:17vw;
     margin-top:3.5vh;
@@ -695,7 +702,7 @@ border:0.5vw solid black;
 
 .dropdown-label{
     font-size:1.1vw;
-    margin-bottom:0.4vh;
+    margin-bottom:1vh;
 }
 
 .sound-dropdown-label{
