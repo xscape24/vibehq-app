@@ -90,17 +90,23 @@ body{
 }
 
 .vibe-hq-btn{
-    
+
     width:10vw;
     height:8vh;
-    background-color: #666e88;
+   background-color: #535b73;
     font-weight:bold;
     color:rgb(0, 0, 0);
     border-radius:1vw;
     justify-content: center;
     font-size:1vw;
-    border:.25vw solid black;
-    margin-top:.5vh;
+        border:.25vw solid black;
+        margin-top:.5vh;
+    cursor:pointer;
+}
+
+.vibe-hq-btn:hover{
+ background-color: #7d8292;
+
 }
 
 #profile-img{

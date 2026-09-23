@@ -96,7 +96,7 @@ body{
 
     width:10vw;
     height:8vh;
-    background-color: #4a526c;
+   background-color: #535b73;
     font-weight:bold;
     color:rgb(0, 0, 0);
     border-radius:1vw;
@@ -107,6 +107,10 @@ body{
     cursor:pointer;
 }
 
+.vibe-hq-btn:hover{
+ background-color: #7d8292;
+
+}
 #about-btn{
 
    

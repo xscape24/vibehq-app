@@ -93,7 +93,7 @@ body{
 
     width:10vw;
     height:8vh;
-    background:linear-gradient(rgb(141, 57, 164),rgb(176, 114, 47));
+   background-color: #535b73;
     font-weight:bold;
     color:rgb(0, 0, 0);
     border-radius:1vw;
@@ -104,15 +104,18 @@ body{
     cursor:pointer;
 }
 
+.vibe-hq-btn:hover{
+ background-color: #7d8292;
+
+}
 #about-btn{
 
    
-       background:linear-gradient(rgb(141, 57, 164),rgb(176, 114, 47));
-
+      
 }
 
 #focus-room-btn{
-    background:linear-gradient(rgb(141, 57, 164),rgb(176, 114, 47));
+   
 }
 #profile-img{
     margin-bottom:2.2vh;
