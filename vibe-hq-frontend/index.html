@@ -8,10 +8,11 @@
     <script src="src\script.js"></script>
 </head>
 <body>
+    <div class="test">
     
     <div class="container">
         <nav class="navbar"> 
-            
+        
             <div class="logo-container">
                 <img src="assets\cloud.svg" class="nav-img logo">
                 <p class="logo-text">Vibe HQ - Find your flow in the noise</p>
@@ -96,16 +97,16 @@
          <div class="main-content-container">
   <div class="card card-1">
             <h2 class="card-header">Today's Tasks      </h2>
-            <ul class="dashboard-list tasks-list">
-                <li class="dashboard-list-item tasks-item">Buy eggs</li>
-                <li class="dashboard-list-item tasks-item">Wash dishes</li>
-                <li class="dashboard-list-item tasks-item" id="last-item">Clean the floor</li>
+            <ul class="dashboard-list"  id="tasks-list">
+                
                
             </ul>
-            <button class="add-task-btn" onclick="popupFn()">Add Task</button>
+             <input type="text" name="" placeholder="Add a new item..." id="to-do-input">
+            <button class="add-task-btn" onclick="addItem()">Add Task</button>
          </div>
          <div class="card  card-2">
   <h2 class="card-header">Active Projects        </h2>
+  
     <ul class="dashboard-list project-list">
                 <li class="dashboard-list-item projects-item">VibeHQ</li>
                 <li class="dashboard-list-item projects-item">Simqueue</li>
@@ -236,4 +237,4 @@
                 </a>
             </footer>
         </div>
-        
+        </div>

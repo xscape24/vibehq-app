@@ -30,8 +30,8 @@ body{
     grid-template-areas:
     "navbar navbar"
     "sidebar main-content"
-    "footer footer"
-    ;
+    "footer footer";
+    
 }
 /*Navbar Section*/
 
@@ -260,6 +260,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    width:100%;
 }
 
 .main-content-header{
